@@ -52,7 +52,7 @@ objects:
     output:
       to:
         kind: ImageStreamTag
-        name: hawkular-grafana:latest
+        name: hawkular-grafana:master
     source:
       contextDir: docker
       git:
