@@ -1,10 +1,9 @@
 FROM centos:7
 
-ENV GRAFANA_VERSION latest
 ENV GF_PATHS_DATA /var/lib/grafana/data
 
 # Install grafana
-RUN yum install -y https://grafanarel.s3.amazonaws.com/builds/grafana-${GRAFANA_VERSION}.x86_64.rpm && \
+RUN yum install -y https://grafanarel.s3.amazonaws.com/builds/grafana-latest-1.x86_64.rpm && \
     yum install -y unzip && \
     yum clean all
 
