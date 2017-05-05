@@ -1,6 +1,6 @@
 FROM centos:7
 
-ENV GRAFANA_VERSION 3.1.1-1470047149
+ENV GRAFANA_VERSION latest
 ENV GF_PATHS_DATA /var/lib/grafana/data
 
 # Install grafana
