@@ -3,7 +3,7 @@ FROM centos:7
 ENV GF_PATHS_DATA /var/lib/grafana/data
 
 # Install grafana
-RUN yum install -y https://grafanarel.s3.amazonaws.com/builds/grafana-latest-1.x86_64.rpm && \
+RUN yum install -y  https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.2.0-1.x86_64.rpm && \
     yum install -y unzip && \
     yum clean all
 
